@@ -1,0 +1,14 @@
+{
+  "name": "midi-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:etienne-dldc/midi-playground.git",
+  "author": "Etienne Dldc <etienne.dldc@outlook.fr>",
+  "license": "MIT",
+  "dependencies": {
+    "midi": "^0.9.5"
+  },
+  "scripts": {
+    "dev": "node ./src/index.js"
+  }
+}

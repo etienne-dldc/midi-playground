@@ -14,11 +14,14 @@ input.on('message', function(deltaTime, message) {
   var num = message[1];
   var x = Math.floor(num / 8);
   var y = num % 8;
-  explosions.push({
-    x: x,
-    y: y,
-    time: frame
-  });
+  if (message[0] === 144) {
+    console.log('Create an explosion at ' + x + ', ' + y);
+    explosions.push({
+      x: x,
+      y: y,
+      time: frame
+    });
+  }
 });
 
 // Open the first available input port. 
